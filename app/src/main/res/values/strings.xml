@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">examen_1eval_joseluis</string>
+    <string name="titulo1">Visita al zoo</string>
+    <string name="titulo2">Elige dia</string>
+    <string name="textospinner">Elige el dia</string>
+    <string name="cantidadEntradas">Cantidad de entradas</string>
+    <string name="titulo3">Entradas disponibles</string>
+    <string name="titulo4">Precio Entradas</string>
+    <string name="titulo5">Descuento aplicado</string>
+    <string name="titulo6">total</string>
+    <string name="titulo7">Ir al pago</string>
+    <string name="textoboton1">Calcular precios</string>
+    <string name="cinco">5</string>
+    <string name="cero">0</string>
+</resources>
