@@ -12,4 +12,11 @@
     <string name="textoboton1">Calcular precios</string>
     <string name="cinco">5</string>
     <string name="cero">0</string>
+    <string name="pago">Pago</string>
+    <string name="total">Total</string>
+    <string name="comision">Comision</string>
+    <string name="a_pagar">Total a pagar</string>
+    <string name="pagar">Pagar</string>
+    <string name="pago_tarjeta">Pago con tarjeta</string>
+    <string name="pago_paypal">Pago con PayPal</string>
 </resources>

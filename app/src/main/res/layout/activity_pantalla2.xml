@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pantalla2Activity">
+
+    <TextView
+        android:id="@+id/txt_pantalla2_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/pago"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_pantalla2_titulo5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="196dp"
+        android:text="@string/a_pagar"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_pago_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:text="@string/cero"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_pantalla2_titulo5"
+        app:layout_constraintStart_toEndOf="@+id/txt_pantalla2_titulo5" />
+
+    <TextView
+        android:id="@+id/txt_pantalla2_titulo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/total"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pantalla2_titulo" />
+
+    <TextView
+        android:id="@+id/txt_pago_total_recibido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:text="@string/cero"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_pantalla2_titulo1"
+        app:layout_constraintStart_toEndOf="@+id/txt_pantalla2_titulo1" />
+
+    <TextView
+        android:id="@+id/txt_pantalla2_titulo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/comision"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_pantalla2_titulo1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pantalla2_titulo1" />
+
+    <TextView
+        android:id="@+id/txt_pago_comision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:text="@string/cero"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_pantalla2_titulo3"
+        app:layout_constraintStart_toEndOf="@+id/txt_pantalla2_titulo3" />
+
+    <ImageView
+        android:id="@+id/img_moneda"
+        android:layout_width="129dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/txt_pantalla2_titulo1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/moneda" />
+
+    <RadioGroup
+        android:id="@+id/rg_opciones_comision"
+        android:layout_width="287dp"
+        android:layout_height="109dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_pantalla2_titulo5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pantalla2_titulo3">
+
+        <RadioButton
+            android:id="@+id/rb_pago_con_tarjeta"
+            android:layout_width="299dp"
+            android:layout_height="66dp"
+            android:checked="true"
+            android:text="@string/pago_tarjeta"
+            android:onClick="actualizar_comision_tarjeta"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/rb_pago_con_paypal"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:onClick="actualizar_comision_tarjeta"
+            android:text="@string/pago_paypal" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_pagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/pagar"
+        android:onClick="mostrar_mensaje"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

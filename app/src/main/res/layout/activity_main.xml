@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_titulo_pantalla1" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/sp_dia_semana"
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginStart="16dp"
@@ -62,7 +62,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.238"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/sp_dia_semana" />
 
     <TextView
         android:id="@+id/txt_entradas_disponibles"
@@ -97,6 +97,7 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/purple_700"
         android:text="@string/textoboton1"
+        android:onClick="calcular_precios"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_cantidad_entradas" />
 
@@ -186,6 +187,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="36dp"
         android:text="@string/titulo7"
+        android:onClick="ir_al_pago"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
